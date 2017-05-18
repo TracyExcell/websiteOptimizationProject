@@ -2,7 +2,6 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
-    del = require('del'),
     image = require('gulp-image'),
     cleanCSS = require('gulp-clean-css');
 
