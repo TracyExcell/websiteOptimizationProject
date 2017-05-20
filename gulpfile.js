@@ -2,7 +2,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
-    image = require('gulp-image'),
+    image = require('gulp-imagemin'),
     cleanCSS = require('gulp-clean-css');
 
 
@@ -37,7 +37,6 @@ gulp.task("concatScriptsCss", function() {
              'css/hero.css',
              'css/menu.css',
              'css/modals.css',
-             'css/foundation.min.css',
              'css/normalize.css'])
       .pipe(concat("main.css"))
       .pipe(gulp.dest("css"));
